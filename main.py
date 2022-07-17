@@ -31,10 +31,10 @@ def ru():
   
         a = collection.find()
         for a in a:
+            
             if(a['status']=='on'):
                 url = F"https://api.telegram.org/bot5378382950:AAGloMMfOPUlCEP7NOMMQmpGzibKukvNQZ4/sendMessage"
-
-
+                print(a['_id'])
                 payload = {
                     "text": getTheker(),
                     "chat_id": a['_id']
