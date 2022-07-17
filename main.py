@@ -4,7 +4,7 @@ import os
 import requests
 from pymongo import MongoClient
 
-PASS=os.environ['pass']
+PASS=os.environ['PASS']
 cluster1=MongoClient(f'mongodb+srv://progr-py:{PASS}@cluster0.macl44c.mongodb.net/?retryWrites=true')
 db1=cluster1["telegram"]
 collection1 = db1["athkar"]
