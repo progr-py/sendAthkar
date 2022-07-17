@@ -13,7 +13,6 @@ collection1 = db1["athkar"]
 cluster=MongoClient(f'mongodb+srv://progr-py:{PASS}@cluster0.macl44c.mongodb.net/?retryWrites=true')
 db=cluster["telegram"]
 collection = db["athkar-users"]
-TOKEN = os.environ['token']
 
 
 
