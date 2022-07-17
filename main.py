@@ -51,4 +51,4 @@ while True:
                 ru()
         except:
                 time.sleep(100)
-        time.sleep(7000)
+        time.sleep(10800)
