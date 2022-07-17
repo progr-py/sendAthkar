@@ -42,9 +42,10 @@ def ru():
                 headers = {
                     "Content-Type": "application/json"
                 }
-
-                response = requests.post(url, json=payload, headers=headers)
-
+                try:
+                    response = requests.post(url, json=payload, headers=headers)
+                except:
+                    print('deleted user')
 while True:
         try:
                 ru()
