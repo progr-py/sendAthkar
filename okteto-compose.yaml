@@ -5,3 +5,4 @@ services:
     environment:
   
       - PASS=${PASS}
+      - TOKEN=${TOKEN}
