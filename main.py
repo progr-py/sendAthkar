@@ -5,6 +5,7 @@ import requests
 from pymongo import MongoClient
 
 PASS=os.environ['PASS']
+TOKEN=os.environ['TOKEN']
 cluster1=MongoClient(f'mongodb+srv://progr-py:{PASS}@cluster0.macl44c.mongodb.net/?retryWrites=true')
 db1=cluster1["telegram"]
 collection1 = db1["athkar"]
@@ -34,7 +35,7 @@ def ru():
         for a in a:
             
             if(a['status']=='on'):
-                url = F"https://api.telegram.org/bot5378382950:AAGloMMfOPUlCEP7NOMMQmpGzibKukvNQZ4/sendMessage"
+                url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
                 print(a['_id'])
                 payload = {
                     "text": theker,
